@@ -137,7 +137,7 @@ def initialize_rag():
         documents.append(doc)
     
     # Building the Vector Store (FAISS)
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
     vectorstore = FAISS.from_documents(documents, embeddings)
     return vectorstore
 
